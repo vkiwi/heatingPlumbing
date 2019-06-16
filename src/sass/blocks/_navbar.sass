@@ -1,0 +1,51 @@
+.navbar
+  &-block     
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__logo
+    margin-left: 3%
+  &__info
+    display: flex
+    align-items: center
+  &__span
+    margin-left: 20px
+    margin-right: 20px
+  &__url
+    color: $text-color
+    font-family: "Proxima Nova"
+    font-size: 16px
+    font-weight: 400
+    line-height: 40px
+    text-decoration: none
+    position: relative
+    &:hover
+      color: $main-color
+    &:after
+      display: block
+      content: ""
+      height: 2px
+      width: 0%
+      background-color: $main-color
+      transition: width .3s ease-in
+      position: absolute
+      bottom: -5px
+      left: 50%
+      transform: translateX(-50%)
+    &:hover:after
+      width: 100%
+    &:focus:after
+      width: 100%
+  &__info
+    margin-right: 3%
+  &__phone
+    font-size: 18px
+    text-transform: uppercase
+    color: $text-color
+    text-decoration: none
+    line-height: 40px
+    margin-left: 6px
+    font-family: "Proxima Nova"
+  &__button
+    margin-left: 30px
+    // margin-right: 3%
