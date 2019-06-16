@@ -13,6 +13,10 @@
   cursor: pointer;
 }
 
+.owl-dot:active, .owl-dot:focus {
+  outline: none;
+}
+
 @font-face {
   font-family: 'Proxima Nova';
   src: url("../fonts/proximanova/ProximaNova-Regular.eot");
@@ -114,10 +118,26 @@
   margin-left: 30px;
 }
 
-.hero {
-  background-color: grey;
+.hero-block-1 {
   padding-left: 5%;
-  background: url("../img/hero/hero-bg-1.png") no-repeat;
+  background-image: url("../img/hero/hero-bg-1.png");
+  background-color: #0a0a0a;
+}
+
+.hero-block-2 {
+  padding-left: 5%;
+  background-image: url("../img/hero/hero-bg-2.jpg");
+}
+
+.hero-block-3 {
+  padding-left: 5%;
+  background: url("../img/hero/hero-bg-3.jpg") no-repeat;
+  background-color: #0a0a0a;
+}
+
+.hero-block-4 {
+  padding-left: 5%;
+  background: url("../img/hero/hero-bg-4.jpg") no-repeat;
   background-color: #0a0a0a;
 }
 
@@ -147,5 +167,103 @@
   margin-top: 53px;
   font-family: "Proxima Nova Semibold";
   margin-bottom: 200px;
+}
+
+.services__title {
+  width: 244px;
+  height: 58px;
+  background-color: #ffc800;
+  font-size: 28px;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  font-family: "Proxima Nova Semibold";
+  line-height: 60px;
+  margin-left: 4%;
+  margin-top: 100px;
+  margin-bottom: 75px;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
+  -webkit-filter: grayscale(1);
+}
+
+.card:hover {
+  -webkit-filter: none;
+}
+
+.card__description {
+  position: absolute;
+  top: 60px;
+  margin: auto;
+  left: 0;
+  right: 0;
+}
+
+.card__description:hover {
+  -webkit-filter: none;
+}
+
+.card__text {
+  color: #fcfafa;
+  font-family: "Proxima Nova";
+  font-size: 20px;
+  line-height: 26px;
+  max-width: 250px;
+  display: block;
+  margin: auto;
+  left: 0;
+  right: 0;
+  margin-bottom: 32px;
+}
+
+.card__text__narrow {
+  max-width: 240px;
+}
+
+.card__button {
+  display: inline-block;
+  width: 138px;
+  height: 33px;
+  background-color: #ffc800;
+  line-height: 31px;
+}
+
+.card__button:hover {
+  background-color: black;
+}
+
+.card__button:hover .card__link {
+  display: none;
+}
+
+.card__button:hover .card__price {
+  display: inline;
+  color: white;
+}
+
+.card__link {
+  color: #020202;
+  font-family: "Proxima Nova";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 15.93px;
+  text-transform: uppercase;
+}
+
+.card__price {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

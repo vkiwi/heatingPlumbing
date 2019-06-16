@@ -1,0 +1,72 @@
+.services
+  &__title
+    width: 244px
+    height: 58px
+    background-color: $main-color
+    font-size: 28px
+    text-transform: uppercase
+    text-align: center
+    vertical-align: middle
+    font-family: "Proxima Nova Semibold"
+    line-height: 60px
+    margin-left: 4%
+    margin-top: 100px
+    margin-bottom: 75px
+.cards
+  display: flex
+  flex-wrap: wrap
+.card
+  position: relative
+  text-align: center
+  margin: auto
+  margin-bottom: 20px
+  -webkit-filter: grayscale(1)
+  &:hover
+    -webkit-filter: none
+  &__description
+    position: absolute
+    top: 60px
+    margin: auto
+    left: 0
+    right: 0
+    &:hover
+      -webkit-filter: none
+  &__text
+    color: #fcfafa
+    font-family: "Proxima Nova"
+    font-size: 20px
+    line-height: 26px
+    max-width: 250px
+    display: block
+    margin: auto
+    left: 0
+    right: 0
+    margin-bottom: 32px
+    &__narrow
+      max-width: 240px
+  &__button
+    display: inline-block
+    width: 138px
+    height: 33px
+    background-color: #ffc800
+    line-height: 31px
+    &:hover
+      background-color: black
+      .card__link
+        display: none
+      .card__price
+        display: inline
+        color: white
+  &__link
+    color: #020202
+    font-family: "Proxima Nova"
+    font-size: 15px
+    font-weight: 400
+    line-height: 15.93px
+    text-transform: uppercase
+  &__price
+    display: none
+
+    
+
+

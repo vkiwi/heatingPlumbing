@@ -1,20 +1,32 @@
 .hero
-  background-color: grey
-  padding-left: 5%
-  background: url('../img/hero/hero-bg-1.png') no-repeat
-  background-color: rgba(10,10,10,2)
+  &-block-1
+    padding-left: 5%
+    // background-image: linear-gradient(to right, rgba(10, 10, 10, 0.3), rgba(10, 10, 10, 0.3)), url('../img/hero/hero-bg-1.png')
+    background-image: url('../img/hero/hero-bg-1.png')
+    background-color: rgba(10,10,10,3)
+  &-block-2
+    padding-left: 5%
+    background-image: url('../img/hero/hero-bg-2.jpg')
+  //  background-image: linear-gradient(to right, rgba(10, 10, 10, 0.3), rgba(10, 10, 10, 0.3)), url('../img/hero/hero-bg-2.jpg')
+    background-color: rgba(100,100,100,0.1)
+  &-block-3
+    padding-left: 5%
+    background: url('../img/hero/hero-bg-3.jpg') no-repeat
+    background-color: rgba(10,10,10,2)
+  &-block-4
+    padding-left: 5%
+    background: url('../img/hero/hero-bg-4.jpg') no-repeat
+    background-color: rgba(10,10,10,2)
   &__title
     font-size: 35px
     text-transform: uppercase
     color: $main-color
     font-family: "Proxima Nova Semibold"
     padding-top: 211px
-    
   &__subtitle
     font-size: 35px
     color: #fffffe
     font-family: "Proxima Nova"
-    
   &__paragraph
     padding-top: 41px
     opacity: 0.42
