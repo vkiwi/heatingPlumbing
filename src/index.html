@@ -237,7 +237,7 @@
     <section class="reviews">
       <div class="container reviews__container">
         <h2 class="section__title reviews__title">отзывы</h2>
-        <div id="" class="owl-carousel owl-theme">
+        <div id="reviews" class="owl-carousel owl-theme">
           <div class="reviews-block item">
             <div class="reviews-block__1">
               <img src="img/reviews/anna.png" alt="" class="reviews-block__img">
@@ -267,7 +267,7 @@
               <img src="img/reviews/anna.png" alt="" class="reviews-block__img">
               <h3 class="reviews-block__name">Вера</h3>
               <p class="reviews-block__review">Authoritatively incubate multidisciplinary partnerships and user friendly e-markets. Interactively whiteboard client-based leadership skills.</p>
-              <div class="comments">
+              <div class="reviews-block__comments">
                 <img src="img/reviews/like.png" alt="" class="reviews-block__like">
                 <span class="reviews-block__like-count">211</span>
                 <img src="img/reviews/dislike.png" alt="" class="reviews-block__dislike">
@@ -278,7 +278,7 @@
               <img src="img/reviews/viktor.png" alt="" class="reviews-block__img">
               <h3 class="reviews-block__name">Вася</h3>
               <p class="reviews-block__review"> Synergistically mesh magnetic leadership rather than cooperative best practices. Authoritatively initiate.Monotonectally actualize 24/7 metrics.</p>
-              <div class="comments">
+              <div class="reviews-block__comments">
                 <img src="img/reviews/like.png" alt="" class="reviews-block__like">
                 <span class="reviews-block__like-count">143</span>
                 <img src="img/reviews/dislike.png" alt="" class="reviews-block__dislike">
@@ -291,7 +291,7 @@
               <img src="img/reviews/anna.png" alt="" class="reviews-block__img">
               <h3 class="reviews-block__name">Катя</h3>
               <p class="reviews-block__review">Authoritatively incubate multidisciplinary partnerships and user friendly e-markets. Interactively whiteboard client-based leadership skills.</p>
-              <div class="comments">
+              <div class="reviews-block__comments">
                 <img src="img/reviews/like.png" alt="" class="reviews-block__like">
                 <span class="reviews-block__like-count">211</span>
                 <img src="img/reviews/dislike.png" alt="" class="reviews-block__dislike">
@@ -302,7 +302,7 @@
               <img src="img/reviews/viktor.png" alt="" class="reviews-block__img">
               <h3 class="reviews-block__name">Гоша</h3>
               <p class="reviews-block__review"> Synergistically mesh magnetic leadership rather than cooperative best practices. Authoritatively initiate.Monotonectally actualize 24/7 metrics.</p>
-              <div class="comments">
+              <div class="reviews-block__comments">
                 <img src="img/reviews/like.png" alt="" class="reviews-block__like">
                 <span class="reviews-block__like-count">143</span>
                 <img src="img/reviews/dislike.png" alt="" class="reviews-block__dislike">
@@ -314,7 +314,92 @@
       </div>
     </section>
 
+    <section class="news">
+      <div class="container news__container">
+        <h2 class="section__title news__title">новости</h2>
+        <div class="news-wrapper">
+          <div class="news-block">
+            <div class="news-block__image">
+              <img src="img/news/news1.png" alt="Новость1">
+            </div>
+            <div class="news-block__header">
+              <div class="news-block__title">ремонт раковины</div>
+              <div class="news-block__data"><b class="news-block__day">&nbsp;29 </b> 11.2017</div>
+            </div>
+            <div class="news-block__paragraph">Holisticly syndicate pandemic value and tactical process improvements. Progressively re-engineer parallel portals vis-a-vis low-risk high-yield platforms. Seamlessly reintermediate market-driven platforms rather than excellent infrastructures. Quickly deploy best-of-breed niche markets without</div>
+            
+          </div>
+          <div class="news-block">
+            <div class="news-block__image">
+              <img src="img/news/news2.png" alt="Новость1">
+            </div>
+            <div class="news-block__header">
+              <div class="news-block__title">подчинка слива</div>
+              <div class="news-block__data"><b class="news-block__day">&nbsp;29 </b> 11.2017</div>
+            </div>
+            <div class="news-block__paragraph">Holisticly syndicate pandemic value and tactical process improvements. Progressively re-engineer parallel portals vis-a-vis low-risk high-yield platforms. Seamlessly reintermediate market-driven platforms rather than excellent infrastructures. Quickly deploy best-of-breed niche markets without</div>
+            
+          </div>
+          <div class="news-block">
+            <div class="news-block__image">
+              <img src="img/news/news3.png" alt="Новость1">
+            </div>
+            <div class="news-block__header">
+              <div class="news-block__title">ремонт раковины</div>
+              <div class="news-block__data"><b class="news-block__day">&nbsp;29 </b> 11.2017</div>
+            </div>
+            <div class="news-block__paragraph">Holisticly syndicate pandemic value and tactical process improvements. Progressively re-engineer parallel portals vis-a-vis low-risk high-yield platforms. Seamlessly reintermediate market-driven platforms rather than excellent infrastructures. Quickly deploy best-of-breed niche markets without</div>
+            
+          </div>
+        </div>
+        <div class="news-block-button">
+          <button class="button news-button">читать все новости</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="map">
+      <div class="container">
+        <div class="map">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A77b7da777b7b914974b60677f22834c6abc6dc155c3e364c5b83576b324c1bbd&amp;width=100%25&amp;height=666&amp;lang=ru_RU&amp;scroll=false"></script>  
+          <div class="request">
+            <h2 class="request__header">оставьте <span class="main-color">заявку</span></h2>
+            <form action="mail.php">
+              <div class="brif-form">
+                <input type="text" name="user_name" class="brif-input" placeholder="Введите ваше имя">
+              </div>
+              <div class="brif-form">
+                <input type="tel" name="user_phone" class="brif-input" placeholder="Введите Ваш номер телефона">
+              </div>
+              <button class="button request__button">заказать  звонок</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
+
+  <footer class="footer">
+    <div class="container footer-container">
+        <div class="footer-address">
+            <img src="img/footer/map.png" alt="значек карты" class="footer-address__map">
+            <a style="text-decoration:none" href="https://yandex.ru/maps/-/CCSgQ25a"><span class="footer-address__location">г. Москва, ул. Советская 48 корп. 3</span></a>
+          </div>
+          <div class="footer-links">
+            <img class="footer-links__link" src="img/footer/insta.png" alt="">
+            <img class="footer-links__link" src="img/footer/vk.png" alt="">
+            <img class="footer-links__link" src="img/footer/ok.png" alt="">
+          </div>
+          <div class="footer-contacts">
+            <img src="img/footer/mail.png" alt="" class="footer-contacts__mailimage">
+            <span class="footer-contacts__mail">infosanteh@gmail.com</span>
+            <span class="footer-contacts__devision">|</span>
+            <img src="img/footer/phone.png" alt="" class="footer-contacts__phoneimage">
+            <span class="footer-contacts__phone"><span class="footer-contacts__phoneRegular">+7 (863) </span>342-22-21</span>
+          </div>
+    </div>
+  </footer>
 
   <!-- <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -332,8 +417,6 @@
           autoplay: true,
           animateOut: 'fadeOut'
       });
-
-
 
     });
   </script>

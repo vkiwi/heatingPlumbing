@@ -26,6 +26,10 @@
   margin-left: 4%;
 }
 
+.main-color {
+  color: #ffc800;
+}
+
 .owl-dot:active, .owl-dot:focus {
   outline: none;
 }
@@ -392,6 +396,10 @@
   margin-top: 20px;
 }
 
+.reviews {
+  margin-top: 142px;
+}
+
 .reviews__title {
   position: absolute;
   top: -50px;
@@ -416,6 +424,9 @@
 
 .reviews-block__comments {
   margin-bottom: 120px;
+  color: white;
+  font-family: "Proxima Nova";
+  font-size: 15px;
 }
 
 .reviews-block__name {
@@ -429,6 +440,10 @@
 .reviews-block__like {
   display: inline;
   width: auto;
+}
+
+.reviews-block__dislike {
+  margin-left: 30px;
 }
 
 .reviews-block__img {
@@ -448,5 +463,204 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 28px;
+}
+
+.news {
+  background-color: #f1f1f1;
+  margin-top: 147px;
+  position: relative;
+  padding-top: 87px;
+  padding-bottom: 72px;
+}
+
+.news__title {
+  position: absolute;
+  top: -50px;
+}
+
+.news-button {
+  font-family: "Proxima Nova";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: uppercase;
+  width: 300px;
+  height: 58px;
+  background-color: #ffc800;
+  margin-top: 70px;
+}
+
+.news-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.news-block {
+  max-width: 377px;
+  margin-right: 20px;
+}
+
+.news-block__image {
+  margin-bottom: 30px;
+}
+
+.news-block-button {
+  text-align: center;
+}
+
+.news-block__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 330px;
+}
+
+.news-block__title {
+  display: inline;
+  font-family: "Proxima Nova";
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.news-block__data {
+  display: inline;
+  text-align: right;
+  margin-left: auto;
+  font-family: "Proxima Nova";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.news-block__day {
+  background-color: #ffc800;
+}
+
+.news-block__paragraph {
+  font-family: "Proxima Nova";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  max-width: 324px;
+  margin-top: 22px;
+}
+
+.map {
+  position: relative;
+}
+
+.request {
+  width: 397px;
+  height: 385px;
+  background-color: #fff;
+  text-align: center;
+  padding-top: 51px;
+  position: absolute;
+  top: 140px;
+  left: 10%;
+}
+
+.request__header {
+  font-family: "Proxima Nova Semibold";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.request__button {
+  font-family: "Proxima Nova";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: uppercase;
+  width: 304px;
+  height: 58px;
+  background-color: #ffc800;
+  margin-top: 30px;
+}
+
+.brif-input {
+  width: 305px;
+  height: 20px;
+  border: none;
+  border-bottom: 1px solid #000000;
+  color: #020202;
+  font-family: "Proxima Nova";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  font-style: italic;
+  margin-bottom: 50px;
+}
+
+.footer {
+  background: #000;
+  height: 134px;
+}
+
+.footer-container {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fdfcfc;
+}
+
+.footer-address__map {
+  margin-right: 13px;
+}
+
+.footer-address__location {
+  font-family: "Proxima Nova";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #fdfcfc;
+}
+
+.footer-links__link {
+  margin-right: 10px;
+  -webkit-filter: grayscale(1);
+}
+
+.footer-links__link:hover {
+  -webkit-filter: none;
+  cursor: pointer;
+}
+
+.footer-contacts__mail {
+  font-family: "Proxima Nova";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.footer-contacts__devision {
+  margin: 15px;
+}
+
+.footer-contacts__phone {
+  font-family: "Proxima Nova";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.footer-contacts__phoneRegular {
+  font-weight: 400;
 }
 /*# sourceMappingURL=style.css.map */
