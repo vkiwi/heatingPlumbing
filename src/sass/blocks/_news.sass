@@ -4,6 +4,9 @@
   position: relative
   padding-top: 87px
   padding-bottom: 72px
+  &-wrapper
+    display: flex
+    flex-wrap: wrap
   &__title
     position: absolute
     top: -50px
@@ -17,7 +20,6 @@
     height: 58px
     background-color: #ffc800
     margin-top: 70px
-
   &-wrapper
     display: flex
     justify-content: center
@@ -37,7 +39,6 @@
       font-size: 20px
       font-weight: 700
       text-transform: uppercase
-
     &__data
       display: inline
       text-align: right
@@ -56,3 +57,9 @@
       line-height: 28px
       max-width: 324px
       margin-top: 22px
+@media (max-width: 768px)
+  .news-block__paragraph
+    margin-bottom: 30px
+@media (max-width: 321px)
+  .news-block__paragraph
+    font-size: 14px

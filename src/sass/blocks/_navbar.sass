@@ -48,4 +48,20 @@
     font-family: "Proxima Nova"
   &__button
     margin-left: 30px
-    // margin-right: 3%
+@media (max-width: 1200px)
+  .navbar
+    &__phone
+      font-size: 12px
+    &__url
+      font-size: 12px
+    &__span
+      margin: 0
+@media (max-width: 768px)
+  .navbar
+    &__contacts
+      display: none
+    &__span
+      margin: 0
+@media (max-width: 321px)
+  .navbar__urls
+    display: none

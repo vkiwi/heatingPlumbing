@@ -22,19 +22,34 @@
     font-weight: 400
     line-height: 28px
     text-transform: uppercase
-    width: 304px
+    width: 70%
     height: 58px
     background-color: $main-color
     margin-top: 30px
-.brif-input
-  width: 305px
-  height: 20px
-  border: none
-  border-bottom: 1px solid #000000
-  color: #020202
-  font-family: "Proxima Nova"
-  font-size: 18px
-  font-weight: 400
-  line-height: 28px
-  font-style: italic
-  margin-bottom: 50px
+.brif
+  &-form
+    position: relative
+  &-input
+    width: 80%
+    height: 20px
+    border: none
+    border-bottom: 1px solid #000000
+    color: #020202
+    font-family: "Proxima Nova"
+    font-size: 18px
+    font-weight: 400
+    line-height: 28px
+    font-style: italic
+    margin-bottom: 50px
+    &:focus
+      outline: none
+      border: 2px solid orange
+// @media (max-width: 1200px)
+
+@media (max-width: 321px)
+  .request
+    width: 90%
+    left: 5%
+  .brif-input
+    font-size: 15px
+    

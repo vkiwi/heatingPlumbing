@@ -8,25 +8,42 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/owl.carousel.css">
   <link rel="stylesheet" href="css/owl.theme.default.css">
+  <link rel="stylesheet" href="css/burger.css">
 </head>
 <body>
+  <!-- Yandex.Metrika counter --> <script> (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(54118858, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/54118858" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
   <nav class="navbar">
     <div class="container">
       <div class="navbar-block">
         <div class="navbar__logo">
           <img src="img/logo.png" alt="Логотип">
         </div>
+
+        <!-- бургер-меню -->
+        <nav class="nav">
+          <input style="display:none" class="nav__check" type="checkbox" id="showmenu"/>
+          <label class="nav__showmenu" for="showmenu">&#9776;</label>
+          <label class="nav__back" for="showmenu"></label>
+          <ul class="menu">
+            <li><a class="menu__item" href="#services">Услуги</a></li>
+            <li><a class="menu__item" href="#services">Цены</a></li>
+            <li><a class="menu__item" href="#reviews">Отзывы</a></li>
+            <li><a class="menu__item" href="#news">Новости</a></li>
+            <li><a class="menu__item" href="#maps">Контакты</a></li>
+          </ul>
+        </nav>
+
         <!-- /.navbar__logo -->
         <div class="navbar__urls">
-          <a href="" class="navbar__url">Услуги</a>
+          <a href="#services" class="navbar__url">Услуги</a>
           <span class="navbar__span">|</span>
-          <a href="" class="navbar__url">Цены</a>
+          <a href="#services" class="navbar__url">Цены</a>
           <span class="navbar__span">|</span>
-          <a href="" class="navbar__url">Отзывы</a>
+          <a href="#reviews" class="navbar__url">Отзывы</a>
           <span class="navbar__span">|</span>
-          <a href="" class="navbar__url">Новости</a>
+          <a href="#news" class="navbar__url">Новости</a>
           <span class="navbar__span">|</span>
-          <a href="" class="navbar__url">Контакты</a>
+          <a href="#maps" class="navbar__url">Контакты</a>
         </div>
         <!-- /.navbar__urls -->
         <div class="navbar__info">
@@ -34,7 +51,7 @@
             <img src="img/phone.png" alt="Телефон">
             <a class="navbar__phone" href="tel:+7(863)342-22-21">+7 (863) <b>342-22-21</b></a>
           </div>
-          <button class="button navbar__button">Заказать звонок</button>
+          <button onclick="ym(54118858, 'reachGoal', 'button'); return true; location.href='#map'" class="button navbar__button">Заказать звонок</button>
         </div>
         <!-- /.navbar__info -->
       </div>
@@ -98,11 +115,11 @@
 
     <section class="services">
       <div class="container services__container">
-        <h2 class="section__title services__title">Услуги</h2>
+        <h2 id="services" class="section__title services__title">Услуги</h2>
         <div class="cards">
           <div class="card">
             <div class="card__image">
-              <img src="img/services/radiator.png" alt="">
+              <img class="card__image1" src="img/services/radiator.png" alt="">
             </div>
             <div class="card__description">
               <span class="card__text card__text__narrow">Монтаж систем отопления</span>
@@ -114,7 +131,7 @@
           </div>
           <div class="card">
             <div class="card__image">
-              <img src="img/services/shells.png" alt="">
+              <img class="card__image1" src="img/services/shells.png" alt="">
             </div>
             <div class="card__description">
               <span class="card__text">Монтаж сантехнического оборудования</span>
@@ -126,7 +143,7 @@
           </div>
           <div class="card">
             <div class="card__image">
-              <img src="img/services/pipes.png" alt="">
+              <img class="card__image1" src="img/services/pipes.png" alt="">
             </div>
             <div class="card__description">
               <span class="card__text">Монтаж канализационного оборудования</span>
@@ -138,7 +155,7 @@
           </div>
           <div class="card">
             <div class="card__image">
-              <img src="img/services/radiator.png" alt="">
+              <img class="card__image1" src="img/services/radiator.png" alt="">
             </div>
             <div class="card__description">
               <span class="card__text card__text__narrow">Монтаж систем отопления</span>
@@ -150,7 +167,7 @@
           </div>
           <div class="card">
             <div class="card__image">
-              <img src="img/services/shells.png" alt="">
+              <img class="card__image1" src="img/services/shells.png" alt="">
             </div>
             <div class="card__description">
               <span class="card__text">Монтаж сантехнического оборудования</span>
@@ -162,7 +179,7 @@
           </div>
           <div class="card">
             <div class="card__image">
-              <img src="img/services/pipes.png" alt="">
+              <img class="card__image1" src="img/services/pipes.png" alt="">
             </div>
             <div class="card__description">
               <span class="card__text">Монтаж канализационного оборудования</span>
@@ -230,14 +247,14 @@
               </li>
             </ul>
           </div>
-        </why-block>
+        </div>
       </div>
     </section>
 
     <section class="reviews">
       <div class="container reviews__container">
-        <h2 class="section__title reviews__title">отзывы</h2>
-        <div id="reviews" class="owl-carousel owl-theme">
+        <h2 id="reviews" class="section__title reviews__title">отзывы</h2>
+        <div class="owl-carousel owl-theme">
           <div class="reviews-block item">
             <div class="reviews-block__1">
               <img src="img/reviews/anna.png" alt="" class="reviews-block__img">
@@ -316,11 +333,11 @@
 
     <section class="news">
       <div class="container news__container">
-        <h2 class="section__title news__title">новости</h2>
+        <h2 id="news" class="section__title news__title">новости</h2>
         <div class="news-wrapper">
           <div class="news-block">
             <div class="news-block__image">
-              <img src="img/news/news1.png" alt="Новость1">
+              <img class="card__image1" src="img/news/news1.png" alt="Новость1">
             </div>
             <div class="news-block__header">
               <div class="news-block__title">ремонт раковины</div>
@@ -331,7 +348,7 @@
           </div>
           <div class="news-block">
             <div class="news-block__image">
-              <img src="img/news/news2.png" alt="Новость1">
+              <img class="card__image1" src="img/news/news2.png" alt="Новость1">
             </div>
             <div class="news-block__header">
               <div class="news-block__title">подчинка слива</div>
@@ -342,7 +359,7 @@
           </div>
           <div class="news-block">
             <div class="news-block__image">
-              <img src="img/news/news3.png" alt="Новость1">
+              <img class="card__image1" src="img/news/news3.png" alt="Новость1">
             </div>
             <div class="news-block__header">
               <div class="news-block__title">ремонт раковины</div>
@@ -358,22 +375,11 @@
       </div>
     </section>
 
-    <section class="map">
+    <section id="maps" class="map">
+      <h2 class="invisible">Нивидимый заголовок</h2>
       <div class="container">
-        <div class="map">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A77b7da777b7b914974b60677f22834c6abc6dc155c3e364c5b83576b324c1bbd&amp;width=100%25&amp;height=666&amp;lang=ru_RU&amp;scroll=false"></script>  
-          <div class="request">
-            <h2 class="request__header">оставьте <span class="main-color">заявку</span></h2>
-            <form action="mail.php">
-              <div class="brif-form">
-                <input type="text" name="user_name" class="brif-input" placeholder="Введите ваше имя">
-              </div>
-              <div class="brif-form">
-                <input type="tel" name="user_phone" class="brif-input" placeholder="Введите Ваш номер телефона">
-              </div>
-              <button class="button request__button">заказать  звонок</button>
-            </form>
-          </div>
+        <div id="map" class="map">
+
         </div>
       </div>
     </section>
@@ -383,30 +389,37 @@
   <footer class="footer">
     <div class="container footer-container">
         <div class="footer-address">
-            <img src="img/footer/map.png" alt="значек карты" class="footer-address__map">
+            <img class="footer__image2 footer-address__map" src="img/footer/map.png" alt="значек карты">
             <a style="text-decoration:none" href="https://yandex.ru/maps/-/CCSgQ25a"><span class="footer-address__location">г. Москва, ул. Советская 48 корп. 3</span></a>
           </div>
           <div class="footer-links">
-            <img class="footer-links__link" src="img/footer/insta.png" alt="">
-            <img class="footer-links__link" src="img/footer/vk.png" alt="">
-            <img class="footer-links__link" src="img/footer/ok.png" alt="">
+            <a href="https://www.instagram.com/"><img class="footer-links__link" src="img/footer/insta.png" alt=""></a>
+            <a href="https://vk.com/"><img class="footer-links__link" src="img/footer/vk.png" alt=""></a>
+            <a href="https://ok.ru/"><img class="footer-links__link" src="img/footer/ok.png" alt=""></a>
           </div>
           <div class="footer-contacts">
-            <img src="img/footer/mail.png" alt="" class="footer-contacts__mailimage">
-            <span class="footer-contacts__mail">infosanteh@gmail.com</span>
+            <div class="footer-contacts__mailwrap">
+              <img class="footer__image2 footer-contacts__mailimage" src="img/footer/mail.png" alt="">
+              <a href="mailto:infosanteh@gmail.com"><span class="footer-contacts__mail">infosanteh@gmail.com</span></a>
+            </div>
             <span class="footer-contacts__devision">|</span>
-            <img src="img/footer/phone.png" alt="" class="footer-contacts__phoneimage">
-            <span class="footer-contacts__phone"><span class="footer-contacts__phoneRegular">+7 (863) </span>342-22-21</span>
+            <div class="footer-contacts__phonewrap">
+              <img class="footer__image2 footer-contacts__phoneimage" src="img/footer/phone.png" alt="">
+              <span class="footer-contacts__phone"><a href="tel:+7(863)342-22-21"><span class="footer-contacts__phoneRegular">+7 (863) </span>342-22-21</a></span>
+            </div>
           </div>
     </div>
   </footer>
 
-  <!-- <script
+  <script
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  crossorigin="anonymous"></script> -->
+  crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
 
   <script>
     $(document).ready(function(){
@@ -417,6 +430,32 @@
           autoplay: true,
           animateOut: 'fadeOut'
       });
+
+        // валидация формы
+        $('#brif-form').validate({
+          errorClass: "invalid",
+          errorElement: "div",
+          rules: {
+            user_name: {
+              required: true,
+              minlength: 2,
+              maxlength: 15
+            },
+            user_phone: {
+              required: true
+            }
+          },
+          messages: {
+            user_name: {
+              required: "Заполните поле",
+              minlength: jQuery.validator.format("Осталось ввести символов: {0}")
+            },
+            user_phone: "Заполните поле"
+          }
+        });
+
+        // маска для телефона
+        $('.phone').mask('+7 (999) 999-99-99');
 
     });
   </script>

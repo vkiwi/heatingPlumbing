@@ -39,3 +39,30 @@
       text-transform: uppercase
       &Regular
         font-weight: 400
+@media (min-width: 1200px)
+  .footer-contacts
+    &__mailwrap
+      display: inline
+    &__phonewrap
+      display: inline
+@media (max-width: 768px)
+  .footer-links
+    display: none
+  .footer-contacts__devision
+    display: none
+  .footer-contacts
+    &__mailwrap
+      display: block
+    &__phonewrap
+      display: block
+@media (max-width: 321px)
+  .footer
+    &__image2
+      display: none
+    &-address__location
+      font-size: 14px
+      line-height: 17px
+    &-contacts__mail
+      font-size: 14px
+    &-contacts__phone
+      font-size: 14px

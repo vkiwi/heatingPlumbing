@@ -30,8 +30,32 @@
   color: #ffc800;
 }
 
+.input.invalid {
+  border: 1px solid red;
+}
+
+div.invalid {
+  position: absolute;
+  top: -18px;
+  left: 110px;
+  color: red;
+}
+
+.brif div.invalid {
+  left: 150px;
+}
+
 .owl-dot:active, .owl-dot:focus {
   outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.invisible {
+  display: none;
 }
 
 @font-face {
@@ -135,27 +159,59 @@
   margin-left: 30px;
 }
 
+@media (max-width: 1200px) {
+  .navbar__phone {
+    font-size: 12px;
+  }
+  .navbar__url {
+    font-size: 12px;
+  }
+  .navbar__span {
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar__contacts {
+    display: none;
+  }
+  .navbar__span {
+    margin: 0;
+  }
+}
+
+@media (max-width: 321px) {
+  .navbar__urls {
+    display: none;
+  }
+}
+
 .hero-block-1 {
   padding-left: 5%;
   background-image: url("../img/hero/hero-bg-1.png");
   background-color: #0a0a0a;
+  background-size: cover;
 }
 
 .hero-block-2 {
   padding-left: 5%;
   background-image: url("../img/hero/hero-bg-2.jpg");
+  background-color: rgba(100, 100, 100, 0.1);
+  background-size: cover;
 }
 
 .hero-block-3 {
   padding-left: 5%;
   background: url("../img/hero/hero-bg-3.jpg") no-repeat;
   background-color: #0a0a0a;
+  background-size: cover;
 }
 
 .hero-block-4 {
   padding-left: 5%;
   background: url("../img/hero/hero-bg-4.jpg") no-repeat;
   background-color: #0a0a0a;
+  background-size: cover;
 }
 
 .hero__title {
@@ -184,6 +240,18 @@
   margin-top: 53px;
   font-family: "Proxima Nova Semibold";
   margin-bottom: 200px;
+}
+
+@media (max-width: 321px) {
+  .hero__title {
+    font-size: 25px;
+  }
+  .hero__subtitle {
+    font-size: 20px;
+  }
+  .hero__paragraph {
+    font-size: 18px;
+  }
 }
 
 .services {
@@ -227,6 +295,10 @@
   margin: auto;
   margin-bottom: 20px;
   -webkit-filter: grayscale(1);
+}
+
+.card__image1 {
+  width: 100%;
 }
 
 .card:hover {
@@ -396,6 +468,28 @@
   margin-top: 20px;
 }
 
+@media (max-width: 1200px) {
+  .why-images__block {
+    width: 130px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .why-images {
+    display: none;
+  }
+}
+
+@media (max-width: 321px) {
+  .why-images {
+    display: none;
+  }
+  .why-list__item {
+    margin-bottom: 20px;
+  }
+}
+
 .reviews {
   margin-top: 142px;
 }
@@ -465,12 +559,26 @@
   line-height: 28px;
 }
 
+@media (max-width: 321px) {
+  .reviews {
+    display: none;
+  }
+}
+
 .news {
   background-color: #f1f1f1;
   margin-top: 147px;
   position: relative;
   padding-top: 87px;
   padding-bottom: 72px;
+}
+
+.news-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .news__title {
@@ -551,6 +659,18 @@
   margin-top: 22px;
 }
 
+@media (max-width: 768px) {
+  .news-block__paragraph {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 321px) {
+  .news-block__paragraph {
+    font-size: 14px;
+  }
+}
+
 .map {
   position: relative;
 }
@@ -581,14 +701,18 @@
   font-weight: 400;
   line-height: 28px;
   text-transform: uppercase;
-  width: 304px;
+  width: 70%;
   height: 58px;
   background-color: #ffc800;
   margin-top: 30px;
 }
 
+.brif-form {
+  position: relative;
+}
+
 .brif-input {
-  width: 305px;
+  width: 80%;
   height: 20px;
   border: none;
   border-bottom: 1px solid #000000;
@@ -599,6 +723,21 @@
   line-height: 28px;
   font-style: italic;
   margin-bottom: 50px;
+}
+
+.brif-input:focus {
+  outline: none;
+  border: 2px solid orange;
+}
+
+@media (max-width: 321px) {
+  .request {
+    width: 90%;
+    left: 5%;
+  }
+  .brif-input {
+    font-size: 15px;
+  }
 }
 
 .footer {
@@ -662,5 +801,45 @@
 
 .footer-contacts__phoneRegular {
   font-weight: 400;
+}
+
+@media (min-width: 1200px) {
+  .footer-contacts__mailwrap {
+    display: inline;
+  }
+  .footer-contacts__phonewrap {
+    display: inline;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-links {
+    display: none;
+  }
+  .footer-contacts__devision {
+    display: none;
+  }
+  .footer-contacts__mailwrap {
+    display: block;
+  }
+  .footer-contacts__phonewrap {
+    display: block;
+  }
+}
+
+@media (max-width: 321px) {
+  .footer__image2 {
+    display: none;
+  }
+  .footer-address__location {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .footer-contacts__mail {
+    font-size: 14px;
+  }
+  .footer-contacts__phone {
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
