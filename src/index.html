@@ -378,9 +378,23 @@
     <section id="maps" class="map">
       <h2 class="invisible">Нивидимый заголовок</h2>
       <div class="container">
-        <div id="map" class="map">
+        <div id="map" class="yandexmap">
 
         </div>
+
+        <div class="request">
+          <h2 class="request__header">оставьте <span class="main-color">заявку</span></h2>
+          <form action="mail.php" method="POST" id="brif-form">
+            <div class="brif-form">
+              <input type="text" name="user_name" class="brif-input" placeholder="Введите ваше имя">
+            </div>
+              <div class="brif-form">
+                <input type="tel" name="user_phone" class="brif-input" placeholder="Введите Ваш номер телефона">
+              </div>
+              <button class="button request__button" >заказать  звонок</button>
+            </form>
+          </div>
+
       </div>
     </section>
 
