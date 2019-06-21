@@ -124,6 +124,7 @@ a {
 .navbar__logo {
   margin-left: 3%;
   margin-top: 7px;
+  margin-bottom: 10px;
 }
 
 .navbar__info {
@@ -134,7 +135,9 @@ a {
       -ms-flex-align: center;
           align-items: center;
   background-color: #f1f1f1;
-  height: 70px;
+  background: -webkit-gradient(linear, left top, right top, from(#f1f1f1), to(#fff));
+  background: linear-gradient(to right, #f1f1f1, #fff);
+  height: 85px;
 }
 
 .navbar__phoneimage {
@@ -198,7 +201,7 @@ a {
 }
 
 .navbar__button {
-  margin-left: 45px;
+  margin-left: 40px;
   text-transform: none;
 }
 
@@ -229,9 +232,23 @@ a {
   }
 }
 
-@media (max-width: 310px) {
+@media (max-width: 450px) {
   .navbar__button {
     margin-left: 0;
+  }
+  .menu-block {
+    width: 0;
+    margin-left: 35%;
+  }
+}
+
+@media (max-width: 321px) {
+  .navbar__button {
+    margin-left: 0;
+  }
+  .menu-block {
+    width: 0;
+    margin-left: 35%;
   }
 }
 
@@ -300,6 +317,12 @@ a {
   margin-bottom: 200px;
   width: 185px;
   height: 44px;
+}
+
+.hero-block__wrapper {
+  max-width: 1280px;
+  margin: auto;
+  margin-top: -7px;
 }
 
 @media (max-width: 768px) {
@@ -560,6 +583,10 @@ a {
   .why-images {
     display: none;
   }
+  .why-list__content {
+    font-size: 15px;
+    line-height: 15px;
+  }
   .why-list__item {
     margin-bottom: 20px;
   }
@@ -637,6 +664,17 @@ a {
 @media (max-width: 321px) {
   .reviews {
     display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .reviews-block__name {
+    font-size: 15px;
+  }
+  .reviews-block__review {
+    font-size: 14px;
+    line-height: 17px;
+    padding: 10px;
   }
 }
 
@@ -735,8 +773,14 @@ a {
 }
 
 @media (max-width: 768px) {
+  .news-block__title {
+    padding-left: 17px;
+  }
   .news-block__paragraph {
     margin-bottom: 30px;
+    font-size: 14px;
+    padding-left: 15px;
+    line-height: 20px;
   }
 }
 
@@ -757,6 +801,11 @@ a {
   position: relative;
 }
 
+.map-wrapper {
+  max-width: 1280px;
+  margin: auto;
+}
+
 .map-container {
   max-width: none;
 }
@@ -769,7 +818,7 @@ a {
   padding-top: 30px;
   position: absolute;
   top: 140px;
-  left: 10%;
+  max-width: 1280px;
 }
 
 .request__header {
@@ -906,6 +955,12 @@ a {
   }
 }
 
+@media (max-width: 1200px) {
+  .footer-contacts__devision {
+    display: none;
+  }
+}
+
 @media (max-width: 768px) {
   .footer-links {
     display: none;
@@ -918,6 +973,18 @@ a {
   }
   .footer-contacts__phonewrap {
     display: block;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer-contacts__mail {
+    font-size: 14px;
+  }
+  .footer-contacts__phone {
+    font-size: 14px;
+  }
+  .footer-address__location {
+    font-size: 14px;
   }
 }
 

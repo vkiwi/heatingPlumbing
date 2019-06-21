@@ -6,11 +6,13 @@
   &__logo
     margin-left: 3%
     margin-top: 7px
+    margin-bottom: 10px
   &__info
     display: flex
     align-items: center
     background-color: #f1f1f1
-    height: 70px
+    background: linear-gradient(to right, #f1f1f1, #fff)
+    height: 85px
     // padding-left: 55px
   &__phoneimage
     margin-left: 50px
@@ -54,7 +56,7 @@
     font-family: "Proxima Nova"
     
   &__button
-    margin-left: 45px
+    margin-left: 40px
     text-transform: none
 @media (max-width: 1200px)
   .navbar
@@ -73,6 +75,15 @@
 @media (max-width: 768px)
   .navbar__urls
     display: none
-@media (max-width: 310px)
+@media (max-width: 450px)
   .navbar__button
     margin-left: 0
+  .menu-block
+    width: 0
+    margin-left: 35%
+@media (max-width: 321px)
+  .navbar__button
+    margin-left: 0
+  .menu-block
+    width: 0
+    margin-left: 35%
