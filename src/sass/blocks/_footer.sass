@@ -10,6 +10,7 @@
     color: #fdfcfc
   &-address
     padding-left: 45px
+    
     &__map
       margin-right: 13px
     &__location
@@ -52,6 +53,9 @@
   .footer-contacts__devision
     display: none  
 @media (max-width: 768px)
+  .footer
+    &-address
+      padding-right: 10px
   .footer-links
     display: none
   .footer-contacts__devision
@@ -61,6 +65,13 @@
       display: block
     &__phonewrap
       display: block
+@media (max-width: 660px)
+  .footer-container
+    justify-content: center
+  .footer-contacts
+    padding-right: 0
+  .footer-address
+    padding-left: 0
 @media (max-width: 400px)
   .footer
     &-contacts__mail

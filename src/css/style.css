@@ -252,6 +252,9 @@ a {
 }
 
 @media (max-width: 321px) {
+  .navbar-menu {
+    padding-left: 0;
+  }
   .navbar__button {
     margin-left: 0;
   }
@@ -374,8 +377,8 @@ a {
 
 .services {
   background-color: #f1f1f1;
-  margin-top: 65px;
-  padding-top: 100px;
+  margin-top: 90px;
+  padding-top: 95px;
   margin-bottom: 143px;
   padding-bottom: 117px;
 }
@@ -396,7 +399,7 @@ a {
   line-height: 60px;
   margin-left: 1%;
   position: absolute;
-  top: -155px;
+  top: -150px;
 }
 
 .cards {
@@ -447,7 +450,7 @@ a {
   margin: auto;
   left: 0;
   right: 0;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 
 .card__text__narrow {
@@ -578,6 +581,7 @@ a {
   margin: 17px;
   margin-top: 0;
   padding-top: 16px;
+  margin-bottom: 30px;
 }
 
 .why-images__span {
@@ -588,7 +592,7 @@ a {
   font-weight: 400;
   line-height: 23px;
   text-transform: uppercase;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 @media (max-width: 1200px) {
@@ -672,9 +676,14 @@ a {
   width: auto;
 }
 
-.reviews-block__1, .reviews-block__2 {
-  margin-left: auto;
+.reviews-block__1 {
+  margin-left: 2%;
   margin-right: auto;
+}
+
+.reviews-block__2 {
+  margin-left: auto;
+  margin-right: 2%;
 }
 
 .reviews-block__review {
@@ -733,7 +742,7 @@ a {
   width: 300px;
   height: 58px;
   background-color: #ffc800;
-  margin-top: 50px;
+  margin-top: 65px;
 }
 
 .news-wrapper {
@@ -751,7 +760,7 @@ a {
 }
 
 .news-block__image {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .news-block-button {
@@ -794,7 +803,7 @@ a {
   font-weight: 400;
   line-height: 28px;
   max-width: 324px;
-  margin-top: 22px;
+  margin-top: 10px;
 }
 
 @media (max-width: 768px) {
@@ -998,6 +1007,9 @@ a {
 }
 
 @media (max-width: 768px) {
+  .footer-address {
+    padding-right: 10px;
+  }
   .footer-links {
     display: none;
   }
@@ -1009,6 +1021,20 @@ a {
   }
   .footer-contacts__phonewrap {
     display: block;
+  }
+}
+
+@media (max-width: 660px) {
+  .footer-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer-contacts {
+    padding-right: 0;
+  }
+  .footer-address {
+    padding-left: 0;
   }
 }
 
