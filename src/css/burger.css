@@ -186,7 +186,7 @@ body {
     z-index: 5;
   }
 
-  @media (min-width: 768px){
+  @media (min-width: 769px){
     .menu-block{
       display: none;
     }

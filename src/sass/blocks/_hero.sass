@@ -1,3 +1,5 @@
+.hero-item
+  height: 740px
 .hero
   margin-top: -25px
   &-container
@@ -9,7 +11,7 @@
     background-size: cover
   &-block-2
     padding-left: 3%
-    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../img/hero/hero-bg-2.jpg')
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('../img/hero/hero-bg-2.png')
     background-size: cover
   &-block-3
     padding-left: 3%
@@ -25,7 +27,7 @@
     color: $main-color
     font-family: "Proxima Nova Semibold"
     padding-top: 202px
-    margin-bottom: 15px
+    margin-bottom: 10px
   &__subtitle
     font-size: 35px
     color: #fffffe
@@ -46,6 +48,14 @@
   max-width: 1280px
   margin: auto
   margin-top: -7px
+@media (max-width: 1200px)
+  .hero
+    &__title
+      font-size: 25px
+    &__subtitle
+      font-size: 20px
+    &__paragraph
+      font-size: 17px
 @media (max-width: 768px)
   .hero
     &__title
